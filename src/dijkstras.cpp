@@ -2,7 +2,7 @@
 using namespace std;
 
 
-constexpr int INF = numeric_limits<int>::max();  // I have no clue why I have to have this here
+//constexpr int INF = numeric_limits<int>::max();  // I have no clue why I have to have this here
 
 
 struct Node {       //  Need to have this to match pseduo code implementation
