@@ -7,7 +7,7 @@
 
 using namespace std;
 
-constexpr int INF = numeric_limits<int>::max();
+constexpr int c = numeric_limits<int>::max();
 
 struct Edge {
     int src=0;
