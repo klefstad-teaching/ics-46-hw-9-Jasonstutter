@@ -68,9 +68,10 @@ void print_path(const vector<int>& v, int total) {
         return;
     }
 
-    cout << "Total cost is " << total << endl;
+    
     for (int i = 0; i < size; i++) {
         cout << v[i] << " ";
     }
     cout << endl;
+    cout << "Total cost is " << total << endl;
 }
