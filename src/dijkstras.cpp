@@ -2,9 +2,6 @@
 using namespace std;
 
 
-//constexpr int INF = numeric_limits<int>::max();  // I have no clue why I have to have this here
-
-
 struct Node {       //  Need to have this to match pseduo code implementation
     int vertex;
     int distance;
@@ -54,8 +51,12 @@ vector<int> extract_shortest_path(const vector<int>& distances, const vector<int
     for (int at = destination; at != -1; at = previous[at]) {
         path.push_back(at);
     }
-    reverse(path.begin(), path.end());
-    return path;
+    
+    vector<int> reversed_path;
+    for (int i = path.size() - 1; i >= 0; --i) {
+        reversed_path.push_back(path[i]);
+    }   
+    return reversed_path;
 }
 
 
