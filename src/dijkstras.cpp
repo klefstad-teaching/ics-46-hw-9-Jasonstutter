@@ -15,7 +15,7 @@ struct Node {       //  Need to have this to match pseduo code implementation
 vector<int> dijkstra_shortest_path(const Graph& G, int source, vector<int>& previous) {
     int n = G.size();
     vector<int> distance(n, INF);
-    previous.resize(n, -1);
+    previous.assign(n, -1);
     vector<bool> visited(n, false);
 
     priority_queue<Node, vector<Node>, greater<Node>> pq;
